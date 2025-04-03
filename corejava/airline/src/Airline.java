@@ -1,4 +1,4 @@
-public class airline {
+public class Airline {
 
     String name;
     String country;
@@ -11,24 +11,24 @@ public class airline {
     int employees;
     String ceo;
 
-    public airline() {
+    public Airline() {
     }
 
-    public airline(String name) {
+    public Airline(String name) {
         this.name = name;
     }
 
-    public airline(String name, String country) {
+    public Airline(String name, String country) {
         this(name);
         this.country = country;
     }
 
-    public airline(String name, String country, int fleetSize) {
+    public Airline(String name, String country, int fleetSize) {
         this(name, country);
         this.fleetSize = fleetSize;
     }
 
-    public airline(String name, String country, int fleetSize, int foundedYear, double revenue) {
+    public Airline(String name, String country, int fleetSize, int foundedYear, double revenue) {
         this(name, country, fleetSize);
         this.foundedYear = foundedYear;
         this.revenue = revenue;
@@ -48,19 +48,19 @@ public class airline {
     }
 
     public static void main(String[] args) {
-        airline airline1 = new airline();
+        Airline airline1 = new Airline();
         airline1.display();
 
-        airline airline2 = new airline("Emirates");
+        Airline airline2 = new Airline("Emirates");
         airline2.display();
 
-        airline airline3 = new airline("Qatar Airways", "Qatar");
+        Airline airline3 = new Airline("Qatar Airways", "Qatar");
         airline3.display();
 
-        airline airline4 = new airline("Singapore Airlines", "Singapore", 150);
+        Airline airline4 = new Airline("Singapore Airlines", "Singapore", 150);
         airline4.display();
 
-        airline airline5 = new airline("British Airways", "UK", 250, 1974, 12.5);
+        Airline airline5 = new Airline("British Airways", "UK", 250, 1974, 12.5);
         airline5.display();
     }
 }
